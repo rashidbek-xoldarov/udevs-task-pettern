@@ -1,0 +1,55 @@
+@import "scss/_mixins.scss";
+
+.pagination {
+  @include centerStart;
+  gap: 15px;
+}
+
+.pages {
+  @include centerStart;
+  gap: 8px;
+}
+
+.prev {
+  @include centerCenter;
+  padding: 6px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    background-color: #edf2f7;
+  }
+}
+
+.next {
+  @include centerCenter;
+  padding: 6px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  &:hover {
+    background-color: #edf2f7;
+  }
+}
+
+.page {
+  font-size: 16px;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background: #edf2f7;
+  }
+}
+
+.active-page {
+  background-color: black;
+  color: #fff;
+}
+
+.limit {
+  width: 60px;
+  padding: 6px;
+}
